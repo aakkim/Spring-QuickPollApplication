@@ -23,6 +23,7 @@ public class ComputeResultController {
         Iterable<Vote> allVotes = voteRepository.findVotesByPoll(pollId);
 
         //TODO: Implement algorithm to count votes
+
         return new ResponseEntity<VoteResult>(voteResult, HttpStatus.OK);
     }
 }
